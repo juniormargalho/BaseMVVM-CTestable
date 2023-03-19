@@ -10,6 +10,7 @@
 		CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA8F29C791BB004F6839 /* Extension + String.swift */; };
 		CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA9229C794BC004F6839 /* HomeViewController.swift */; };
 		CE33CA9529C794BC004F6839 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33CA9329C794BC004F6839 /* HomeViewController.xib */; };
+		CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA9629C79AA6004F6839 /* HomeViewModel.swift */; };
 		CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBCE229C0ED2800890D00 /* AppDelegate.swift */; };
 		CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBCE429C0ED2800890D00 /* SceneDelegate.swift */; };
 		CE5DBCEC29C0ED2A00890D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBCEB29C0ED2A00890D00 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		CE33CA8F29C791BB004F6839 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
 		CE33CA9229C794BC004F6839 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE33CA9329C794BC004F6839 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE33CA9629C79AA6004F6839 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CE5DBCDF29C0ED2800890D00 /* BaseMVVM-CTestable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseMVVM-CTestable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DBCE229C0ED2800890D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5DBCE429C0ED2800890D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		CE33CA9129C79484004F6839 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE33CA9629C79AA6004F6839 /* HomeViewModel.swift */,
 				CE33CA9229C794BC004F6839 /* HomeViewController.swift */,
 				CE33CA9329C794BC004F6839 /* HomeViewController.xib */,
 			);
@@ -312,6 +315,7 @@
 				CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */,
 				CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */,
 				CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */,
+				CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
