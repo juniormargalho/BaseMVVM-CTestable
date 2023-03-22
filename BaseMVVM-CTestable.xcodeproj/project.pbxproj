@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE02F09229CB9F5600B4C5C9 /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */; };
+		CE02F09329CB9F5600B4C5C9 /* AccessAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */; };
+		CE02F09E29CBA45A00B4C5C9 /* PJButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F09D29CBA45A00B4C5C9 /* PJButtonView.swift */; };
+		CE02F0A029CBA47200B4C5C9 /* PJButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02F09F29CBA47200B4C5C9 /* PJButtonView.xib */; };
+		CE02F0A229CBA4A700B4C5C9 /* PJButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A129CBA4A700B4C5C9 /* PJButtonViewModel.swift */; };
+		CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A329CBABEA00B4C5C9 /* HomeService.swift */; };
+		CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A629CBAC5800B4C5C9 /* HomeCoordinator.swift */; };
 		CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA8F29C791BB004F6839 /* Extension + String.swift */; };
 		CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA9229C794BC004F6839 /* HomeViewController.swift */; };
 		CE33CA9529C794BC004F6839 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33CA9329C794BC004F6839 /* HomeViewController.xib */; };
@@ -38,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
+		CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessAccountViewController.xib; sourceTree = "<group>"; };
+		CE02F09D29CBA45A00B4C5C9 /* PJButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJButtonView.swift; sourceTree = "<group>"; };
+		CE02F09F29CBA47200B4C5C9 /* PJButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PJButtonView.xib; sourceTree = "<group>"; };
+		CE02F0A129CBA4A700B4C5C9 /* PJButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJButtonViewModel.swift; sourceTree = "<group>"; };
+		CE02F0A329CBABEA00B4C5C9 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		CE02F0A629CBAC5800B4C5C9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		CE33CA8F29C791BB004F6839 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
 		CE33CA9229C794BC004F6839 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE33CA9329C794BC004F6839 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -80,10 +94,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE33CA8A29C790D6004F6839 /* Features */ = {
+		CE02F08F29CB9EEA00B4C5C9 /* AccessAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CE02F09629CB9F7F00B4C5C9 /* Models */,
+				CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */,
+				CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */,
+			);
+			path = AccessAccount;
+			sourceTree = "<group>";
+		};
+		CE02F09429CB9F5C00B4C5C9 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		CE02F09529CB9F6300B4C5C9 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		CE02F09629CB9F7F00B4C5C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE02F09829CB9FCF00B4C5C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE02F09929CBA1DB00B4C5C9 /* Autenticated */ = {
 			isa = PBXGroup;
 			children = (
 				CE33CA9129C79484004F6839 /* Home */,
+			);
+			path = Autenticated;
+			sourceTree = "<group>";
+		};
+		CE02F09A29CBA1E900B4C5C9 /* UnAutenticated */ = {
+			isa = PBXGroup;
+			children = (
+				CE02F09529CB9F6300B4C5C9 /* ForgotPassword */,
+				CE02F09429CB9F5C00B4C5C9 /* CreateAccount */,
+				CE02F08F29CB9EEA00B4C5C9 /* AccessAccount */,
+			);
+			path = UnAutenticated;
+			sourceTree = "<group>";
+		};
+		CE02F09B29CBA40900B4C5C9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE02F09C29CBA42F00B4C5C9 /* PJButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CE02F09C29CBA42F00B4C5C9 /* PJButton */ = {
+			isa = PBXGroup;
+			children = (
+				CE02F0A129CBA4A700B4C5C9 /* PJButtonViewModel.swift */,
+				CE02F09D29CBA45A00B4C5C9 /* PJButtonView.swift */,
+				CE02F09F29CBA47200B4C5C9 /* PJButtonView.xib */,
+			);
+			path = PJButton;
+			sourceTree = "<group>";
+		};
+		CE02F0A529CBABFC00B4C5C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE33CA8A29C790D6004F6839 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CE02F09A29CBA1E900B4C5C9 /* UnAutenticated */,
+				CE02F09929CBA1DB00B4C5C9 /* Autenticated */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -110,6 +206,8 @@
 		CE33CA8D29C7919B004F6839 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				CE02F09B29CBA40900B4C5C9 /* Components */,
+				CE02F09829CB9FCF00B4C5C9 /* Models */,
 				CE33CA8E29C791A5004F6839 /* Extensions */,
 			);
 			path = Commons;
@@ -126,6 +224,9 @@
 		CE33CA9129C79484004F6839 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE02F0A529CBABFC00B4C5C9 /* Models */,
+				CE02F0A629CBAC5800B4C5C9 /* HomeCoordinator.swift */,
+				CE02F0A329CBABEA00B4C5C9 /* HomeService.swift */,
 				CE33CA9629C79AA6004F6839 /* HomeViewModel.swift */,
 				CE33CA9229C794BC004F6839 /* HomeViewController.swift */,
 				CE33CA9329C794BC004F6839 /* HomeViewController.xib */,
@@ -285,8 +386,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE02F0A029CBA47200B4C5C9 /* PJButtonView.xib in Resources */,
 				CE5DBCEF29C0ED2A00890D00 /* LaunchScreen.storyboard in Resources */,
 				CE5DBCEC29C0ED2A00890D00 /* Assets.xcassets in Resources */,
+				CE02F09329CB9F5600B4C5C9 /* AccessAccountViewController.xib in Resources */,
 				CE33CA9529C794BC004F6839 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,9 +415,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE02F09229CB9F5600B4C5C9 /* AccessAccountViewController.swift in Sources */,
 				CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */,
 				CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */,
+				CE02F09E29CBA45A00B4C5C9 /* PJButtonView.swift in Sources */,
+				CE02F0A229CBA4A700B4C5C9 /* PJButtonViewModel.swift in Sources */,
 				CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */,
+				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
+				CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */,
 				CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
 			);

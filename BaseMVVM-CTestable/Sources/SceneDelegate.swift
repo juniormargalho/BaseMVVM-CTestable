@@ -13,10 +13,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let viewModel = HomeViewModel()
-        let viewController = HomeViewController(viewModel: viewModel)
+        
+        let viewController: UIViewController?
 
+        if getIsUserLogged() {
+            viewController = HomeViewController(viewModel: viewModel)
+        } else {
+            viewController = AccessAccountViewController()
+        }
+
+        guard let viewController = viewController else { return }
+        let navigation = UINavigationController(rootViewController: viewController)
+        
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = viewController
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
 
@@ -48,6 +58,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    private func getIsUserLogged() -> Bool {
+        true
+    }
 }
 
