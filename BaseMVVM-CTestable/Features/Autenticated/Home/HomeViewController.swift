@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        viewModel.callBack = self
     }
     
     required init?(coder: NSCoder) {
@@ -26,11 +27,22 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeViewModelCallBack {
-    func showLoading(_ isLoad: Bool) {
-        if isLoad {
-            // show
+    func successFetchHome(response: UserModel) {
+        if let firstName = response.firstName {
+            print(firstName)
+        }
+        print("mais alguma coisa")
+    }
+    
+    func failureFetchHome(message: String) {
+        // Apresentar alert
+    }
+    
+    func showLoading(isShow: Bool) {
+        if isShow {
+            // apresentar loading
         } else {
-            // hide
+            // esconder loading
         }
     }
 }

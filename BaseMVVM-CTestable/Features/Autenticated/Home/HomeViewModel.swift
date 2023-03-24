@@ -8,18 +8,40 @@
 import Foundation
 
 protocol HomeViewModelCallBack: AnyObject {
-    func showLoading(_ isLoad: Bool)
+    func showLoading(isShow: Bool)
+    func successFetchHome(response: UserModel)
+    func failureFetchHome(message: String)
 }
 
 final class HomeViewModel {
+    private let service: HomeServiceProtocol
     weak var callBack: HomeViewModelCallBack?
     
+    init(service: HomeServiceProtocol) {
+        self.service = service
+    }
+    
     func fetchUser() {
-        callBack?.showLoading(true)
+        callBack?.showLoading(isShow: true)
+        service.fetchUser { [weak self] result in
+            switch result {
+            case .success(let user):
+                self?.callBack?.showLoading(isShow: false)
+                self?.callBack?.successFetchHome(response: user)
+            case .failure:
+                self?.callBack?.showLoading(isShow: false)
+                self?.callBack?.failureFetchHome(message: "Usuário não encontrado")
+            }
+        }
+    }
+    
+    func fetchUserFirstName() {
         
-        // consumo sucesso
-        callBack?.showLoading(false)
-        // consumo falha
-        callBack?.showLoading(false)
+    }
+    
+    private func capitalize(text: String) -> String {
+        return text.capitalized
     }
 }
+
+// Explicar chamada e tratamento
