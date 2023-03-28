@@ -9,6 +9,7 @@ import Foundation
 
 public protocol HomeServiceProtocol {
     func fetchUser(completion: @escaping (Result<UserModel, Error>) -> Void)
+    func getImageFrom(StringURL: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
 final class HomeService: HomeServiceProtocol {
@@ -25,5 +26,19 @@ final class HomeService: HomeServiceProtocol {
                 }
             }
         }.resume()
+    }
+    
+    func getImageFrom(StringURL: String, completion: @escaping (Result<Data, Error>) -> Void) {
+        if let url = URL(string: StringURL) {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                DispatchQueue.main.async {
+                    if let data = data {
+                        completion(.success(data))
+                    } else {
+                        completion(.failure(NSError()))
+                    }
+                }
+            }.resume()
+        }
     }
 }

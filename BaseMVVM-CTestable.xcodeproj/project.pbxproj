@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE02F09229CB9F5600B4C5C9 /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */; };
 		CE02F09329CB9F5600B4C5C9 /* AccessAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */; };
-		CE02F09E29CBA45A00B4C5C9 /* PJButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F09D29CBA45A00B4C5C9 /* PJButtonView.swift */; };
-		CE02F0A029CBA47200B4C5C9 /* PJButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02F09F29CBA47200B4C5C9 /* PJButtonView.xib */; };
-		CE02F0A229CBA4A700B4C5C9 /* PJButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A129CBA4A700B4C5C9 /* PJButtonViewModel.swift */; };
 		CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A329CBABEA00B4C5C9 /* HomeService.swift */; };
 		CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A629CBAC5800B4C5C9 /* HomeCoordinator.swift */; };
 		CE02F0A929CE3EAE00B4C5C9 /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02F0A829CE3EAE00B4C5C9 /* UserResponseModel.swift */; };
@@ -27,6 +24,12 @@
 		CE5DBCFA29C0ED2B00890D00 /* BaseMVVM_CTestableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBCF929C0ED2B00890D00 /* BaseMVVM_CTestableTests.swift */; };
 		CE5DBD0429C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBD0329C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift */; };
 		CE5DBD0629C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */; };
+		CEB14FA629D3235000E90A9E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */; };
+		CEB14FA729D3235000E90A9E /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */; };
+		CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */; };
+		CEB14FAB29D3236200E90A9E /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FA929D3236200E90A9E /* ForgotPasswordViewController.xib */; };
+		CEB14FAE29D35E6B00E90A9E /* BaseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FAD29D35E6B00E90A9E /* BaseButtonView.swift */; };
+		CEB14FB029D35E8100E90A9E /* BaseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +52,6 @@
 /* Begin PBXFileReference section */
 		CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
 		CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessAccountViewController.xib; sourceTree = "<group>"; };
-		CE02F09D29CBA45A00B4C5C9 /* PJButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJButtonView.swift; sourceTree = "<group>"; };
-		CE02F09F29CBA47200B4C5C9 /* PJButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PJButtonView.xib; sourceTree = "<group>"; };
-		CE02F0A129CBA4A700B4C5C9 /* PJButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJButtonViewModel.swift; sourceTree = "<group>"; };
 		CE02F0A329CBABEA00B4C5C9 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		CE02F0A629CBAC5800B4C5C9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		CE02F0A829CE3EAE00B4C5C9 /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
@@ -71,6 +71,12 @@
 		CE5DBCFF29C0ED2B00890D00 /* BaseMVVM-CTestableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseMVVM-CTestableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DBD0329C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMVVM_CTestableUITests.swift; sourceTree = "<group>"; };
 		CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMVVM_CTestableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CEB14FA929D3236200E90A9E /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		CEB14FAD29D35E6B00E90A9E /* BaseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonView.swift; sourceTree = "<group>"; };
+		CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseButtonView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,6 @@
 		CE02F08F29CB9EEA00B4C5C9 /* AccessAccount */ = {
 			isa = PBXGroup;
 			children = (
-				CE02F09629CB9F7F00B4C5C9 /* Models */,
 				CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */,
 				CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */,
 			);
@@ -111,6 +116,8 @@
 		CE02F09429CB9F5C00B4C5C9 /* CreateAccount */ = {
 			isa = PBXGroup;
 			children = (
+				CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */,
+				CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */,
 			);
 			path = CreateAccount;
 			sourceTree = "<group>";
@@ -118,22 +125,10 @@
 		CE02F09529CB9F6300B4C5C9 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
+				CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */,
+				CEB14FA929D3236200E90A9E /* ForgotPasswordViewController.xib */,
 			);
 			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
-		CE02F09629CB9F7F00B4C5C9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CE02F09829CB9FCF00B4C5C9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		CE02F09929CBA1DB00B4C5C9 /* Autenticated */ = {
@@ -157,19 +152,9 @@
 		CE02F09B29CBA40900B4C5C9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				CE02F09C29CBA42F00B4C5C9 /* PJButton */,
+				CEB14FAC29D35E2500E90A9E /* BaseButton */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		CE02F09C29CBA42F00B4C5C9 /* PJButton */ = {
-			isa = PBXGroup;
-			children = (
-				CE02F0A129CBA4A700B4C5C9 /* PJButtonViewModel.swift */,
-				CE02F09D29CBA45A00B4C5C9 /* PJButtonView.swift */,
-				CE02F09F29CBA47200B4C5C9 /* PJButtonView.xib */,
-			);
-			path = PJButton;
 			sourceTree = "<group>";
 		};
 		CE02F0A529CBABFC00B4C5C9 /* Models */ = {
@@ -213,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				CE02F09B29CBA40900B4C5C9 /* Components */,
-				CE02F09829CB9FCF00B4C5C9 /* Models */,
 				CE33CA8E29C791A5004F6839 /* Extensions */,
 			);
 			path = Commons;
@@ -286,6 +270,15 @@
 				CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */,
 			);
 			path = "BaseMVVM-CTestableUITests";
+			sourceTree = "<group>";
+		};
+		CEB14FAC29D35E2500E90A9E /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				CEB14FAD29D35E6B00E90A9E /* BaseButtonView.swift */,
+				CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */,
+			);
+			path = BaseButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,11 +385,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE02F0A029CBA47200B4C5C9 /* PJButtonView.xib in Resources */,
+				CEB14FAB29D3236200E90A9E /* ForgotPasswordViewController.xib in Resources */,
+				CEB14FB029D35E8100E90A9E /* BaseButtonView.xib in Resources */,
 				CE5DBCEF29C0ED2A00890D00 /* LaunchScreen.storyboard in Resources */,
 				CE5DBCEC29C0ED2A00890D00 /* Assets.xcassets in Resources */,
 				CE02F09329CB9F5600B4C5C9 /* AccessAccountViewController.xib in Resources */,
 				CE33CA9529C794BC004F6839 /* HomeViewController.xib in Resources */,
+				CEB14FA729D3235000E90A9E /* CreateAccountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,15 +416,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB14FA629D3235000E90A9E /* CreateAccountViewController.swift in Sources */,
 				CE02F09229CB9F5600B4C5C9 /* AccessAccountViewController.swift in Sources */,
 				CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */,
 				CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */,
-				CE02F09E29CBA45A00B4C5C9 /* PJButtonView.swift in Sources */,
-				CE02F0A229CBA4A700B4C5C9 /* PJButtonViewModel.swift in Sources */,
 				CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */,
 				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
 				CE02F0A929CE3EAE00B4C5C9 /* UserResponseModel.swift in Sources */,
 				CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */,
+				CEB14FAE29D35E6B00E90A9E /* BaseButtonView.swift in Sources */,
+				CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */,
 				CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */,
 				CE02F0AB29CE3EC600B4C5C9 /* UserModel.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
