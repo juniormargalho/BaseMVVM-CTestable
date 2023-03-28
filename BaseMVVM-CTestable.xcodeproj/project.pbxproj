@@ -30,6 +30,8 @@
 		CEB14FAB29D3236200E90A9E /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FA929D3236200E90A9E /* ForgotPasswordViewController.xib */; };
 		CEB14FAE29D35E6B00E90A9E /* BaseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FAD29D35E6B00E90A9E /* BaseButtonView.swift */; };
 		CEB14FB029D35E8100E90A9E /* BaseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */; };
+		CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FB129D362A900E90A9E /* Coordinator.swift */; };
+		CEB14FB429D362E100E90A9E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FB329D362E100E90A9E /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		CEB14FA929D3236200E90A9E /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		CEB14FAD29D35E6B00E90A9E /* BaseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonView.swift; sourceTree = "<group>"; };
 		CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseButtonView.xib; sourceTree = "<group>"; };
+		CEB14FB129D362A900E90A9E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CEB14FB329D362E100E90A9E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 			children = (
 				CE5DBCE229C0ED2800890D00 /* AppDelegate.swift */,
 				CE5DBCE429C0ED2800890D00 /* SceneDelegate.swift */,
+				CEB14FB129D362A900E90A9E /* Coordinator.swift */,
+				CEB14FB329D362E100E90A9E /* AppCoordinator.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -422,11 +428,13 @@
 				CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */,
 				CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */,
 				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
+				CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */,
 				CE02F0A929CE3EAE00B4C5C9 /* UserResponseModel.swift in Sources */,
 				CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */,
 				CEB14FAE29D35E6B00E90A9E /* BaseButtonView.swift in Sources */,
 				CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */,
 				CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */,
+				CEB14FB429D362E100E90A9E /* AppCoordinator.swift in Sources */,
 				CE02F0AB29CE3EC600B4C5C9 /* UserModel.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
 			);

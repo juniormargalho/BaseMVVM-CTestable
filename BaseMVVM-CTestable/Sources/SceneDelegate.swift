@@ -12,21 +12,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
-        let viewModel = HomeViewModel()
         
-        let viewController: UIViewController?
-
-        if getIsUserLogged() {
-            viewController = HomeViewController(viewModel: viewModel)
-        } else {
-            viewController = AccessAccountViewController()
-        }
-
-        guard let viewController = viewController else { return }
-        let navigation = UINavigationController(rootViewController: viewController)
+        let appCoordinator = AppCoordinator()
+        appCoordinator.start()
         
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = navigation
+        window?.rootViewController = appCoordinator.navigationController
         window?.makeKeyAndVisible()
     }
 
@@ -57,9 +48,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-    private func getIsUserLogged() -> Bool {
-        true
-    }
 }
-
