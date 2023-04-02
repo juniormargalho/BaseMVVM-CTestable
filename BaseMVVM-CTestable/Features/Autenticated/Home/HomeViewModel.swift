@@ -10,9 +10,9 @@ import Foundation
 protocol HomeViewModelCallBack: AnyObject {
     func showLoading(isShow: Bool)
     func successFetchHome(response: UserModel)
-    func failureFetchHome(message: String)
+    func failureFetchHome()
     func successGetImageFrom(response: Data)
-    func failureGetImageFrom(message: String)
+    func failureGetImageFrom()
 }
 
 final class HomeViewModel {
@@ -28,24 +28,24 @@ final class HomeViewModel {
         service.fetchUser { [weak self] result in
             switch result {
             case .success(let user):
-                self?.getImageFrom(StringURL: user.avatar)
+                self?.getImageFrom(stringURL: user.avatar)
                 self?.callBack?.successFetchHome(response: user)
             case .failure:
                 self?.callBack?.showLoading(isShow: false)
-                self?.callBack?.failureFetchHome(message: "Não foi possível carregar informações do Usuário")
+                self?.callBack?.failureFetchHome()
             }
         }
     }
     
-    func getImageFrom(StringURL: String) {
-        service.getImageFrom(StringURL: StringURL) { [weak self] result in
+    private func getImageFrom(stringURL: String) {
+        service.getImageFrom(stringURL: stringURL) { [weak self] result in
             switch result {
             case .success(let data):
                 self?.callBack?.showLoading(isShow: false)
                 self?.callBack?.successGetImageFrom(response: data)
             case .failure:
                 self?.callBack?.showLoading(isShow: false)
-                self?.callBack?.failureGetImageFrom(message: "Não foi possivel carregar a imagem do usuário")
+                self?.callBack?.failureGetImageFrom()
             }
         }
     }

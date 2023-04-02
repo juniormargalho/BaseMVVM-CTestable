@@ -9,15 +9,55 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseButtonView" customModule="BaseMVVM_CTestable" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaseButtonView" customModule="BaseMVVM_CTestable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="48"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAE-Vf-rrB">
+                    <rect key="frame" x="0.0" y="0.0" width="315" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleButton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSx-Ax-AMw">
+                            <rect key="frame" x="20" y="13.5" width="275" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-0D-RaV">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="48"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="handleButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="poa-M4-H0W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="gSx-Ax-AMw" firstAttribute="centerY" secondItem="YAE-Vf-rrB" secondAttribute="centerY" id="3tv-Ch-B6c"/>
+                        <constraint firstAttribute="trailing" secondItem="gSx-Ax-AMw" secondAttribute="trailing" constant="20" id="edH-3H-UDO"/>
+                        <constraint firstAttribute="bottom" secondItem="8gh-0D-RaV" secondAttribute="bottom" id="gya-2Q-1Gb"/>
+                        <constraint firstItem="gSx-Ax-AMw" firstAttribute="leading" secondItem="YAE-Vf-rrB" secondAttribute="leading" constant="20" id="ibB-r4-Ooj"/>
+                        <constraint firstAttribute="trailing" secondItem="8gh-0D-RaV" secondAttribute="trailing" id="keF-4b-9iF"/>
+                        <constraint firstItem="8gh-0D-RaV" firstAttribute="top" secondItem="YAE-Vf-rrB" secondAttribute="top" id="pMo-6O-fcj"/>
+                        <constraint firstItem="8gh-0D-RaV" firstAttribute="leading" secondItem="YAE-Vf-rrB" secondAttribute="leading" id="uvC-Xr-p71"/>
+                        <constraint firstAttribute="height" constant="48" id="x1J-Hp-OAa"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YAE-Vf-rrB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9O1-PG-ghS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YAE-Vf-rrB" secondAttribute="trailing" id="Dof-l8-K7T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YAE-Vf-rrB" secondAttribute="bottom" id="YCa-7N-fUH"/>
+                <constraint firstItem="YAE-Vf-rrB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rsS-w5-PEr"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="46" y="-225"/>
+            <connections>
+                <outlet property="labelTitle" destination="gSx-Ax-AMw" id="72m-jc-7uc"/>
+                <outlet property="viewContent" destination="YAE-Vf-rrB" id="Tjh-Vd-VmB"/>
+            </connections>
+            <point key="canvasLocation" x="55.797101449275367" y="-256.47321428571428"/>
         </view>
     </objects>
     <resources>

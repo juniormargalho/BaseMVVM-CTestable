@@ -14,10 +14,14 @@ protocol HomeViewNavigation {
 class HomeViewController: UIViewController {
     weak var coordinator: HomeCoordinator?
     private let viewModel: HomeViewModel
+    private let baseButtonViewConfirm = BaseButtonView.fromXib()
+    private let baseButtonViewCancel = BaseButtonView.fromXib()
     
     @IBOutlet weak var imageUserAvatar: UIImageView!
     @IBOutlet weak var labelGreetings: UILabel!
     @IBOutlet weak var viewGreetings: UIView!
+    @IBOutlet weak var viewButtonConfirm: UIView!
+    @IBOutlet weak var viewButtonCancel: UIView!
     
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
@@ -46,11 +50,39 @@ class HomeViewController: UIViewController {
     private func setupUI() {
         title = "HOME"
         imageUserAvatar.layer.cornerRadius = 2
+        setupViewGreetings()
+        setupViewButtonConfirm()
+        setupViewButtonCancel()
+    }
+    
+    private func setupViewGreetings() {
         viewGreetings.layer.cornerRadius = 4
         viewGreetings.layer.shadowColor = UIColor.black.cgColor
         viewGreetings.layer.shadowRadius = 2
         viewGreetings.layer.shadowOffset = CGSize(width: 0, height: 3)
-        viewGreetings.layer.shadowOpacity = 0.3
+        viewGreetings.layer.shadowOpacity = 0.5
+    }
+    
+    private func setupViewButtonConfirm() {
+        baseButtonViewConfirm.didHandleButton = {
+            print("pressed button confirm")
+        }
+        viewButtonConfirm.addSubview(baseButtonViewConfirm)
+        baseButtonViewConfirm.fillSuperView()
+        baseButtonViewConfirm.setup(title: "Confirmar",
+                                    titleColor: .white,
+                                    backgroundColor: .blue)
+    }
+    
+    private func setupViewButtonCancel() {
+        baseButtonViewCancel.didHandleButton = {
+            print("pressed button cancel")
+        }
+        viewButtonCancel.addSubview(baseButtonViewCancel)
+        baseButtonViewCancel.fillSuperView()
+        baseButtonViewCancel.setup(title: "Cancelar",
+                                   titleColor: .white,
+                                   backgroundColor: .red)
     }
 }
 
@@ -59,20 +91,20 @@ extension HomeViewController: HomeViewModelCallBack {
         imageUserAvatar.image = UIImage(data: response)
     }
     
-    func failureGetImageFrom(message: String) {
+    func failureGetImageFrom() {
         imageUserAvatar.image = UIImage(named: "ic_user_avatar")
     }
     
     func successFetchHome(response: UserModel) {
         var greetings = "Bem vindo(a)"
-        if let firstName = response.firstName {
+        if let firstName = response.firstName, firstName != "" {
             greetings = "Bem vindo(a), \(firstName)"
         }
         labelGreetings.text = greetings
     }
     
-    func failureFetchHome(message: String) {
-        showAlert("Falha", message)
+    func failureFetchHome() {
+        showAlert("Falha", "Não foi possível carregar informações do Usuário")
     }
     
     func showLoading(isShow: Bool) {

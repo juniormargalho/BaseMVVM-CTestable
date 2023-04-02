@@ -7,14 +7,30 @@
 
 import UIKit
 
-class BaseButtonView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+public final class BaseButtonView: UIView {
+    // MARK: Properties
+    var didHandleButton: (() -> Void)?
+    
+    // MARK: Outlets
+    @IBOutlet private weak var viewContent: UIView!
+    @IBOutlet private weak var labelTitle: UILabel!
+    
+    // MARK: Actions
+    @IBAction func handleButtonAction(_ sender: Any) {
+        didHandleButton?()
     }
-    */
-
+    
+    // MARK: Methods
+    func setup(title: String,
+               titleColor: UIColor = .black,
+               backgroundColor: UIColor = .white) {
+        labelTitle.text = title
+        labelTitle.textColor = titleColor
+        viewContent.backgroundColor = backgroundColor
+        setupUI()
+    }
+    
+    private func setupUI() {
+        viewContent.layer.cornerRadius = 24
+    }
 }

@@ -9,13 +9,12 @@ import Foundation
 
 public protocol HomeServiceProtocol {
     func fetchUser(completion: @escaping (Result<UserModel, Error>) -> Void)
-    func getImageFrom(StringURL: String, completion: @escaping (Result<Data, Error>) -> Void)
+    func getImageFrom(stringURL: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
 final class HomeService: HomeServiceProtocol {
     func fetchUser(completion: @escaping (Result<UserModel, Error>) -> Void) {
-        let url = URL(string: "https://reqres.in/api/users/3")!
-        
+        let url = URL(string: "https://reqres.in/api/users/2")!
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             DispatchQueue.main.async {
@@ -28,8 +27,8 @@ final class HomeService: HomeServiceProtocol {
         }.resume()
     }
     
-    func getImageFrom(StringURL: String, completion: @escaping (Result<Data, Error>) -> Void) {
-        if let url = URL(string: StringURL) {
+    func getImageFrom(stringURL: String, completion: @escaping (Result<Data, Error>) -> Void) {
+        if let url = URL(string: stringURL) {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 DispatchQueue.main.async {
                     if let data = data {
