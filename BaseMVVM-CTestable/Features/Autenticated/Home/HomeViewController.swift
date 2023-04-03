@@ -12,17 +12,24 @@ protocol HomeViewNavigation {
 }
 
 class HomeViewController: UIViewController {
+    // MARK: Properties
     weak var coordinator: HomeCoordinator?
     private let viewModel: HomeViewModel
     private let baseButtonViewConfirm = BaseButtonView.fromXib()
     private let baseButtonViewCancel = BaseButtonView.fromXib()
+    private let baseTextFieldViewName = BaseTextFieldView.fromXib()
+    private let baseTextFieldViewPassword = BaseTextFieldView.fromXib()
     
+    // MARK: Outlets
     @IBOutlet weak var imageUserAvatar: UIImageView!
     @IBOutlet weak var labelGreetings: UILabel!
     @IBOutlet weak var viewGreetings: UIView!
     @IBOutlet weak var viewButtonConfirm: UIView!
     @IBOutlet weak var viewButtonCancel: UIView!
+    @IBOutlet weak var viewTextFieldName: UIView!
+    @IBOutlet weak var viewTextFieldPassword: UIView!
     
+    // MARK: Initializers
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -33,10 +40,23 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindEvents()
         setupUI()
         viewModel.fetchUser()
+    }
+    
+    // MARK: Methods
+    private func bindEvents() {
+        baseButtonViewConfirm.didHandleButton = { [weak self] in
+            self?.baseTextFieldViewName.update(state: .defaultState)
+        }
+        
+        baseButtonViewCancel.didHandleButton = { [weak self] in
+            self?.baseTextFieldViewName.update(state: .errorState, errorMessage: "Campo inválido")
+        }
     }
     
     private func showAlert(_ title: String,_ message: String) {
@@ -51,6 +71,8 @@ class HomeViewController: UIViewController {
         title = "HOME"
         imageUserAvatar.layer.cornerRadius = 2
         setupViewGreetings()
+        setupViewTextFieldName()
+        setupViewTextFieldPassword()
         setupViewButtonConfirm()
         setupViewButtonCancel()
     }
@@ -63,21 +85,27 @@ class HomeViewController: UIViewController {
         viewGreetings.layer.shadowOpacity = 0.5
     }
     
+    private func setupViewTextFieldName() {
+        viewTextFieldName.addSubview(baseTextFieldViewName)
+        baseTextFieldViewName.fillSuperView()
+        baseTextFieldViewName.setup(type: .defaultType, title: "Nome")
+    }
+    
+    private func setupViewTextFieldPassword() {
+        viewTextFieldPassword.addSubview(baseTextFieldViewPassword)
+        baseTextFieldViewPassword.fillSuperView()
+        baseTextFieldViewPassword.setup(type: .securityType, title: "Senha")
+    }
+    
     private func setupViewButtonConfirm() {
-        baseButtonViewConfirm.didHandleButton = {
-            print("pressed button confirm")
-        }
         viewButtonConfirm.addSubview(baseButtonViewConfirm)
         baseButtonViewConfirm.fillSuperView()
         baseButtonViewConfirm.setup(title: "Confirmar",
                                     titleColor: .white,
-                                    backgroundColor: .blue)
+                                    backgroundColor: .baseColor01)
     }
     
     private func setupViewButtonCancel() {
-        baseButtonViewCancel.didHandleButton = {
-            print("pressed button cancel")
-        }
         viewButtonCancel.addSubview(baseButtonViewCancel)
         baseButtonViewCancel.fillSuperView()
         baseButtonViewCancel.setup(title: "Cancelar",
@@ -86,6 +114,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+// MARK: Extensions
 extension HomeViewController: HomeViewModelCallBack {
     func successGetImageFrom(response: Data) {
         imageUserAvatar.image = UIImage(data: response)
