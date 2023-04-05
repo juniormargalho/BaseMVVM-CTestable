@@ -22,8 +22,8 @@ public final class BaseButtonView: UIView {
     
     // MARK: Methods
     func setup(title: String,
-               titleColor: UIColor = .black,
-               backgroundColor: UIColor = .white) {
+               titleColor: UIColor = .baseColor(.baseWhite),
+               backgroundColor: UIColor = .baseColor(.basePrimary)) {
         labelTitle.text = title
         labelTitle.textColor = titleColor
         viewContent.backgroundColor = backgroundColor

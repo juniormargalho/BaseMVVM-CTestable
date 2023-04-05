@@ -102,7 +102,7 @@ class HomeViewController: UIViewController {
         baseButtonViewConfirm.fillSuperView()
         baseButtonViewConfirm.setup(title: "Confirmar",
                                     titleColor: .white,
-                                    backgroundColor: .baseColor01)
+                                    backgroundColor: .baseColor(.basePrimary))
     }
     
     private func setupViewButtonCancel() {
@@ -110,7 +110,7 @@ class HomeViewController: UIViewController {
         baseButtonViewCancel.fillSuperView()
         baseButtonViewCancel.setup(title: "Cancelar",
                                    titleColor: .white,
-                                   backgroundColor: .red)
+                                   backgroundColor: .baseColor(.baseSecondary))
     }
 }
 

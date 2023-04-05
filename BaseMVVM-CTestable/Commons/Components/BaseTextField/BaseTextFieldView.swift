@@ -47,7 +47,7 @@ class BaseTextFieldView: UIView {
             setupSecurityType()
         }
         labelTitle.text = title
-        labelError.textColor = .red
+        labelError.textColor = .baseColor(.baseError)
         labelError.font = UIFont.systemFont(ofSize: 12)
         setupViewTextField(state: .defaultState)
         update(state: .defaultState)
@@ -57,10 +57,10 @@ class BaseTextFieldView: UIView {
         switch state {
         case .defaultState:
             labelError.text = " "
-            viewTextField.layer.borderColor = UIColor.gray.cgColor
+            viewTextField.layer.borderColor = UIColor.baseColor(.baseGray800).cgColor
         case .errorState:
             labelError.text = errorMessage
-            viewTextField.layer.borderColor = UIColor.red.cgColor
+            viewTextField.layer.borderColor = UIColor.baseColor(.baseError).cgColor
         }
     }
     
