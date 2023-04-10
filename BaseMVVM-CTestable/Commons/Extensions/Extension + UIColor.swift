@@ -11,6 +11,7 @@ enum ColorBase {
     case baseBlack
     case baseError
     case baseGray300
+    case baseGray600
     case baseGray800
     case basePrimary
     case baseSecondary
@@ -29,6 +30,8 @@ extension UIColor {
             return UIColor(named: "baseError") ?? colorDefault
         case .baseGray300:
             return UIColor(named: "baseGray300") ?? colorDefault
+        case .baseGray600:
+            return UIColor(named: "baseGray600") ?? colorDefault
         case .baseGray800:
             return UIColor(named: "baseGray800") ?? colorDefault
         case .basePrimary:

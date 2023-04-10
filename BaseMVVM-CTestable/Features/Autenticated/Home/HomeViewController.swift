@@ -78,6 +78,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setupViewGreetings() {
+        labelGreetings.font = .roboto(size: 14, weight: .medium)
         viewGreetings.layer.cornerRadius = 4
         viewGreetings.layer.shadowColor = UIColor.black.cgColor
         viewGreetings.layer.shadowRadius = 2

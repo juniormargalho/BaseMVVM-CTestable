@@ -28,6 +28,7 @@
 		CE5DBCFA29C0ED2B00890D00 /* BaseMVVM_CTestableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBCF929C0ED2B00890D00 /* BaseMVVM_CTestableTests.swift */; };
 		CE5DBD0429C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBD0329C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift */; };
 		CE5DBD0629C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */; };
+		CE66F87729E493F7004C412A /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87629E493F7004C412A /* Extension + UIFont.swift */; };
 		CEB14FA629D3235000E90A9E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */; };
 		CEB14FA729D3235000E90A9E /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */; };
 		CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */; };
@@ -70,6 +71,9 @@
 		CE5739F429DA303300990FED /* BaseTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldView.swift; sourceTree = "<group>"; };
 		CE5739F629DA304A00990FED /* BaseTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTextFieldView.xib; sourceTree = "<group>"; };
 		CE5739F829DB829800990FED /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
+		CE573A0029DE235E00990FED /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CE573A0129DE236E00990FED /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CE573A0229DE237C00990FED /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		CE5DBCDF29C0ED2800890D00 /* BaseMVVM-CTestable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseMVVM-CTestable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DBCE229C0ED2800890D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5DBCE429C0ED2800890D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		CE5DBCFF29C0ED2B00890D00 /* BaseMVVM-CTestableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseMVVM-CTestableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DBD0329C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMVVM_CTestableUITests.swift; sourceTree = "<group>"; };
 		CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMVVM_CTestableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE66F87629E493F7004C412A /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
 		CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +196,7 @@
 		CE33CA8B29C7917F004F6839 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE5739FE29DE230E00990FED /* Fonts */,
 				CE5DBCEB29C0ED2A00890D00 /* Assets.xcassets */,
 				CE5DBCED29C0ED2A00890D00 /* LaunchScreen.storyboard */,
 				CE5DBCF029C0ED2A00890D00 /* Info.plist */,
@@ -224,6 +230,7 @@
 				CE33CA8F29C791BB004F6839 /* Extension + String.swift */,
 				CE5739EF29DA17B400990FED /* Extension + UIView.swift */,
 				CE5739F829DB829800990FED /* Extension + UIColor.swift */,
+				CE66F87629E493F7004C412A /* Extension + UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,6 +255,24 @@
 				CE5739F629DA304A00990FED /* BaseTextFieldView.xib */,
 			);
 			path = BaseTextField;
+			sourceTree = "<group>";
+		};
+		CE5739FE29DE230E00990FED /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE5739FF29DE234800990FED /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CE5739FF29DE234800990FED /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				CE573A0029DE235E00990FED /* Roboto-Regular.ttf */,
+				CE573A0229DE237C00990FED /* Roboto-Medium.ttf */,
+				CE573A0129DE236E00990FED /* Roboto-Bold.ttf */,
+			);
+			path = Roboto;
 			sourceTree = "<group>";
 		};
 		CE5DBCD629C0ED2800890D00 = {
@@ -458,6 +483,7 @@
 				CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */,
 				CEB14FB429D362E100E90A9E /* AppCoordinator.swift in Sources */,
 				CE5739F029DA17B400990FED /* Extension + UIView.swift in Sources */,
+				CE66F87729E493F7004C412A /* Extension + UIFont.swift in Sources */,
 				CE02F0AB29CE3EC600B4C5C9 /* UserModel.swift in Sources */,
 				CE5739F529DA303300990FED /* BaseTextFieldView.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
