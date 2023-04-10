@@ -29,6 +29,8 @@
 		CE5DBD0429C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBD0329C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift */; };
 		CE5DBD0629C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */; };
 		CE66F87729E493F7004C412A /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87629E493F7004C412A /* Extension + UIFont.swift */; };
+		CE66F87929E4A113004C412A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87829E4A113004C412A /* SessionManager.swift */; };
+		CE66F87C29E4A270004C412A /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87B29E4A270004C412A /* SessionModel.swift */; };
 		CEB14FA629D3235000E90A9E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */; };
 		CEB14FA729D3235000E90A9E /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */; };
 		CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */; };
@@ -86,6 +88,8 @@
 		CE5DBD0329C0ED2B00890D00 /* BaseMVVM_CTestableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMVVM_CTestableUITests.swift; sourceTree = "<group>"; };
 		CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMVVM_CTestableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE66F87629E493F7004C412A /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
+		CE66F87829E4A113004C412A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		CE66F87B29E4A270004C412A /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				CE02F0A829CE3EAE00B4C5C9 /* UserResponseModel.swift */,
-				CE02F0AA29CE3EC600B4C5C9 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				CE5DBCE429C0ED2800890D00 /* SceneDelegate.swift */,
 				CEB14FB129D362A900E90A9E /* Coordinator.swift */,
 				CEB14FB329D362E100E90A9E /* AppCoordinator.swift */,
+				CE66F87829E4A113004C412A /* SessionManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -218,6 +222,8 @@
 		CE33CA8D29C7919B004F6839 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				CE66F87D29E4B094004C412A /* Enums */,
+				CE66F87A29E4A25E004C412A /* Models */,
 				CE02F09B29CBA40900B4C5C9 /* Components */,
 				CE33CA8E29C791A5004F6839 /* Extensions */,
 			);
@@ -321,6 +327,22 @@
 				CE5DBD0529C0ED2B00890D00 /* BaseMVVM_CTestableUITestsLaunchTests.swift */,
 			);
 			path = "BaseMVVM-CTestableUITests";
+			sourceTree = "<group>";
+		};
+		CE66F87A29E4A25E004C412A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE66F87B29E4A270004C412A /* SessionModel.swift */,
+				CE02F0AA29CE3EC600B4C5C9 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE66F87D29E4B094004C412A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		CEB14FAC29D35E2500E90A9E /* BaseButton */ = {
@@ -473,6 +495,7 @@
 				CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */,
 				CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */,
 				CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */,
+				CE66F87C29E4A270004C412A /* SessionModel.swift in Sources */,
 				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
 				CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */,
 				CE02F0A929CE3EAE00B4C5C9 /* UserResponseModel.swift in Sources */,
@@ -486,6 +509,7 @@
 				CE66F87729E493F7004C412A /* Extension + UIFont.swift in Sources */,
 				CE02F0AB29CE3EC600B4C5C9 /* UserModel.swift in Sources */,
 				CE5739F529DA303300990FED /* BaseTextFieldView.swift in Sources */,
+				CE66F87929E4A113004C412A /* SessionManager.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
