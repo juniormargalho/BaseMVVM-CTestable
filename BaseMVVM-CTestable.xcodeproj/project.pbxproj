@@ -20,6 +20,7 @@
 		CE34C52829F9B24800E615D2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34C52729F9B24800E615D2 /* LoadingView.swift */; };
 		CE34C52A29F9B26600E615D2 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34C52929F9B26600E615D2 /* LoadingView.xib */; };
 		CE34C52D29F9B41A00E615D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34C52C29F9B41A00E615D2 /* BaseViewController.swift */; };
+		CE34C53029F9C3E800E615D2 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34C52F29F9C3E800E615D2 /* WebViewViewController.swift */; };
 		CE5739F029DA17B400990FED /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5739EF29DA17B400990FED /* Extension + UIView.swift */; };
 		CE5739F529DA303300990FED /* BaseTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5739F429DA303300990FED /* BaseTextFieldView.swift */; };
 		CE5739F729DA304A00990FED /* BaseTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5739F629DA304A00990FED /* BaseTextFieldView.xib */; };
@@ -76,6 +77,7 @@
 		CE34C52729F9B24800E615D2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CE34C52929F9B26600E615D2 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		CE34C52C29F9B41A00E615D2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE34C52F29F9C3E800E615D2 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		CE5739EF29DA17B400990FED /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		CE5739F429DA303300990FED /* BaseTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldView.swift; sourceTree = "<group>"; };
 		CE5739F629DA304A00990FED /* BaseTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTextFieldView.xib; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		CE33CA8D29C7919B004F6839 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				CE34C52E29F9C3BF00E615D2 /* WebView */,
 				CE34C52B29F9B40200E615D2 /* Base */,
 				CE34C52629F9B21D00E615D2 /* LoadingView */,
 				CE66F87D29E4B094004C412A /* Enums */,
@@ -280,6 +283,14 @@
 				CE34C52C29F9B41A00E615D2 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		CE34C52E29F9C3BF00E615D2 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				CE34C52F29F9C3E800E615D2 /* WebViewViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		CE5739F329DA300400990FED /* BaseTextField */ = {
@@ -529,6 +540,7 @@
 				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
 				CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */,
 				CE02F0A929CE3EAE00B4C5C9 /* UserResponseModel.swift in Sources */,
+				CE34C53029F9C3E800E615D2 /* WebViewViewController.swift in Sources */,
 				CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */,
 				CEB14FAE29D35E6B00E90A9E /* BaseButtonView.swift in Sources */,
 				CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */,

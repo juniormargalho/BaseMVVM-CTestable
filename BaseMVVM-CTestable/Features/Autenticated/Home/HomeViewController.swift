@@ -55,12 +55,9 @@ class HomeViewController: BaseViewController {
         }
         
         baseButtonViewCancel.didHandleButton = { [weak self] in
-            guard let name = self?.baseTextFieldViewName.textField.text else { return }
-            if name != "junior" {
-                self?.baseTextFieldViewName.update(state: .errorState, errorMessage: "Campo inválido")
-            } else {
-                self?.baseTextFieldViewName.update(state: .defaultState)
-            }
+            guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
+            let webView = WebViewViewController(url: url)
+            self?.present(webView, animated: true)
         }
     }
     

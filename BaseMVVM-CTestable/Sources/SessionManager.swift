@@ -20,6 +20,7 @@ final class SessionManager {
         case id = "keyUserId"
         case avatar = "keyUserAvatar"
         case email = "keyUserEmail"
+        case firstName = "keyUserFirstName"
     }
 
     var token: String? {
@@ -57,6 +58,15 @@ final class SessionManager {
             UserDefaults.standard.string(forKey: KeysUser.email.rawValue)
         }
     }
+    
+    var userFirstName: String? {
+        set {
+            UserDefaults.standard.set(newValue, forKey: KeysUser.firstName.rawValue)
+        }
+        get {
+            UserDefaults.standard.string(forKey: KeysUser.firstName.rawValue)
+        }
+    }
 
     // MARK: Methods
     func startSession(with session: SessionModel) {
@@ -64,6 +74,7 @@ final class SessionManager {
             userId = user.id
             userAvatar = user.avatar
             userEmail = user.email
+            userFirstName = user.firstName
         }
         token = session.token
         hasSession = true
