@@ -17,6 +17,9 @@
 		CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA9229C794BC004F6839 /* HomeViewController.swift */; };
 		CE33CA9529C794BC004F6839 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33CA9329C794BC004F6839 /* HomeViewController.xib */; };
 		CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33CA9629C79AA6004F6839 /* HomeViewModel.swift */; };
+		CE34C52829F9B24800E615D2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34C52729F9B24800E615D2 /* LoadingView.swift */; };
+		CE34C52A29F9B26600E615D2 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34C52929F9B26600E615D2 /* LoadingView.xib */; };
+		CE34C52D29F9B41A00E615D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34C52C29F9B41A00E615D2 /* BaseViewController.swift */; };
 		CE5739F029DA17B400990FED /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5739EF29DA17B400990FED /* Extension + UIView.swift */; };
 		CE5739F529DA303300990FED /* BaseTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5739F429DA303300990FED /* BaseTextFieldView.swift */; };
 		CE5739F729DA304A00990FED /* BaseTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5739F629DA304A00990FED /* BaseTextFieldView.xib */; };
@@ -31,6 +34,7 @@
 		CE66F87729E493F7004C412A /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87629E493F7004C412A /* Extension + UIFont.swift */; };
 		CE66F87929E4A113004C412A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87829E4A113004C412A /* SessionManager.swift */; };
 		CE66F87C29E4A270004C412A /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F87B29E4A270004C412A /* SessionModel.swift */; };
+		CE66F88129E4B8CB004C412A /* AccessAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66F88029E4B8CB004C412A /* AccessAccountViewModel.swift */; };
 		CEB14FA629D3235000E90A9E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */; };
 		CEB14FA729D3235000E90A9E /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */; };
 		CEB14FAA29D3236200E90A9E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */; };
@@ -69,6 +73,9 @@
 		CE33CA9229C794BC004F6839 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE33CA9329C794BC004F6839 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CE33CA9629C79AA6004F6839 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE34C52729F9B24800E615D2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CE34C52929F9B26600E615D2 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		CE34C52C29F9B41A00E615D2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CE5739EF29DA17B400990FED /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		CE5739F429DA303300990FED /* BaseTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldView.swift; sourceTree = "<group>"; };
 		CE5739F629DA304A00990FED /* BaseTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTextFieldView.xib; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		CE66F87629E493F7004C412A /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
 		CE66F87829E4A113004C412A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		CE66F87B29E4A270004C412A /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		CE66F88029E4B8CB004C412A /* AccessAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewModel.swift; sourceTree = "<group>"; };
 		CEB14FA429D3235000E90A9E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		CEB14FA529D3235000E90A9E /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		CEB14FA829D3236200E90A9E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		CE02F08F29CB9EEA00B4C5C9 /* AccessAccount */ = {
 			isa = PBXGroup;
 			children = (
+				CE66F88029E4B8CB004C412A /* AccessAccountViewModel.swift */,
 				CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */,
 				CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */,
 			);
@@ -222,6 +231,8 @@
 		CE33CA8D29C7919B004F6839 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				CE34C52B29F9B40200E615D2 /* Base */,
+				CE34C52629F9B21D00E615D2 /* LoadingView */,
 				CE66F87D29E4B094004C412A /* Enums */,
 				CE66F87A29E4A25E004C412A /* Models */,
 				CE02F09B29CBA40900B4C5C9 /* Components */,
@@ -252,6 +263,23 @@
 				CE33CA9329C794BC004F6839 /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		CE34C52629F9B21D00E615D2 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				CE34C52729F9B24800E615D2 /* LoadingView.swift */,
+				CE34C52929F9B26600E615D2 /* LoadingView.xib */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		CE34C52B29F9B40200E615D2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE34C52C29F9B41A00E615D2 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		CE5739F329DA300400990FED /* BaseTextField */ = {
@@ -464,6 +492,7 @@
 				CE5DBCEC29C0ED2A00890D00 /* Assets.xcassets in Resources */,
 				CE02F09329CB9F5600B4C5C9 /* AccessAccountViewController.xib in Resources */,
 				CE5739F729DA304A00990FED /* BaseTextFieldView.xib in Resources */,
+				CE34C52A29F9B26600E615D2 /* LoadingView.xib in Resources */,
 				CE33CA9529C794BC004F6839 /* HomeViewController.xib in Resources */,
 				CEB14FA729D3235000E90A9E /* CreateAccountViewController.xib in Resources */,
 			);
@@ -495,6 +524,7 @@
 				CE33CA9429C794BC004F6839 /* HomeViewController.swift in Sources */,
 				CE5DBCE329C0ED2800890D00 /* AppDelegate.swift in Sources */,
 				CE33CA9029C791BB004F6839 /* Extension + String.swift in Sources */,
+				CE34C52D29F9B41A00E615D2 /* BaseViewController.swift in Sources */,
 				CE66F87C29E4A270004C412A /* SessionModel.swift in Sources */,
 				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
 				CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */,
@@ -506,11 +536,13 @@
 				CE33CA9729C79AA6004F6839 /* HomeViewModel.swift in Sources */,
 				CEB14FB429D362E100E90A9E /* AppCoordinator.swift in Sources */,
 				CE5739F029DA17B400990FED /* Extension + UIView.swift in Sources */,
+				CE66F88129E4B8CB004C412A /* AccessAccountViewModel.swift in Sources */,
 				CE66F87729E493F7004C412A /* Extension + UIFont.swift in Sources */,
 				CE02F0AB29CE3EC600B4C5C9 /* UserModel.swift in Sources */,
 				CE5739F529DA303300990FED /* BaseTextFieldView.swift in Sources */,
 				CE66F87929E4A113004C412A /* SessionManager.swift in Sources */,
 				CE5DBCE529C0ED2800890D00 /* SceneDelegate.swift in Sources */,
+				CE34C52829F9B24800E615D2 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

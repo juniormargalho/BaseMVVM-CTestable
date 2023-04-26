@@ -11,7 +11,7 @@ protocol HomeViewNavigation {
     func goToAccessAccount()
 }
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     // MARK: Properties
     weak var coordinator: HomeCoordinator?
     private let viewModel: HomeViewModel
@@ -51,11 +51,16 @@ class HomeViewController: UIViewController {
     // MARK: Methods
     private func bindEvents() {
         baseButtonViewConfirm.didHandleButton = { [weak self] in
-            self?.baseTextFieldViewName.update(state: .defaultState)
+            self?.viewModel.didHandleConfirmButton()
         }
         
         baseButtonViewCancel.didHandleButton = { [weak self] in
-            self?.baseTextFieldViewName.update(state: .errorState, errorMessage: "Campo inválido")
+            guard let name = self?.baseTextFieldViewName.textField.text else { return }
+            if name != "junior" {
+                self?.baseTextFieldViewName.update(state: .errorState, errorMessage: "Campo inválido")
+            } else {
+                self?.baseTextFieldViewName.update(state: .defaultState)
+            }
         }
     }
     
@@ -138,6 +143,6 @@ extension HomeViewController: HomeViewModelCallBack {
     }
     
     func showLoading(isShow: Bool) {
-        isShow ? print("loading...") : print("loaded")
+        showLoading(isShow)
     }
 }

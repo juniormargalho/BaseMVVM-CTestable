@@ -37,6 +37,13 @@ final class HomeViewModel {
         }
     }
     
+    func didHandleConfirmButton() {
+        callBack?.showLoading(isShow: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.callBack?.showLoading(isShow: false)
+        }
+    }
+    
     private func getImageFrom(stringURL: String) {
         service.getImageFrom(stringURL: stringURL) { [weak self] result in
             switch result {
