@@ -41,6 +41,11 @@ class HomeViewController: BaseViewController {
     }
     
     // MARK: Overrides
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindEvents()
@@ -51,7 +56,7 @@ class HomeViewController: BaseViewController {
     // MARK: Methods
     private func bindEvents() {
         baseButtonViewConfirm.didHandleButton = { [weak self] in
-            self?.viewModel.didHandleConfirmButton()
+            self?.coordinator?.goToAccessAccount()
         }
         
         baseButtonViewCancel.didHandleButton = { [weak self] in

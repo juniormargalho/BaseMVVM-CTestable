@@ -44,6 +44,7 @@
 		CEB14FB029D35E8100E90A9E /* BaseButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */; };
 		CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FB129D362A900E90A9E /* Coordinator.swift */; };
 		CEB14FB429D362E100E90A9E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB14FB329D362E100E90A9E /* AppCoordinator.swift */; };
+		CEEF73132A0AF18F00BAA279 /* AccessAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF73122A0AF18F00BAA279 /* AccessAccountCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		CEB14FAF29D35E8100E90A9E /* BaseButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseButtonView.xib; sourceTree = "<group>"; };
 		CEB14FB129D362A900E90A9E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CEB14FB329D362E100E90A9E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CEEF73122A0AF18F00BAA279 /* AccessAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		CE02F08F29CB9EEA00B4C5C9 /* AccessAccount */ = {
 			isa = PBXGroup;
 			children = (
+				CEEF73122A0AF18F00BAA279 /* AccessAccountCoordinator.swift */,
 				CE66F88029E4B8CB004C412A /* AccessAccountViewModel.swift */,
 				CE02F09029CB9F5600B4C5C9 /* AccessAccountViewController.swift */,
 				CE02F09129CB9F5600B4C5C9 /* AccessAccountViewController.xib */,
@@ -540,6 +543,7 @@
 				CE02F0A429CBABEA00B4C5C9 /* HomeService.swift in Sources */,
 				CEB14FB229D362A900E90A9E /* Coordinator.swift in Sources */,
 				CE02F0A929CE3EAE00B4C5C9 /* UserResponseModel.swift in Sources */,
+				CEEF73132A0AF18F00BAA279 /* AccessAccountCoordinator.swift in Sources */,
 				CE34C53029F9C3E800E615D2 /* WebViewViewController.swift in Sources */,
 				CE02F0A729CBAC5800B4C5C9 /* HomeCoordinator.swift in Sources */,
 				CEB14FAE29D35E6B00E90A9E /* BaseButtonView.swift in Sources */,

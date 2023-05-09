@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeCoordinator: Coordinator {
+final class HomeCoordinator: Coordinator {
     var navigationController: UINavigationController
     var child: Coordinator?
     
@@ -20,12 +20,22 @@ class HomeCoordinator: Coordinator {
         let viewModel = HomeViewModel(service: service)
         let homeViewController = HomeViewController(viewModel: viewModel)
         homeViewController.coordinator = self
+        child = self
         navigationController.pushViewController(homeViewController, animated: true)
+    }
+    
+    func popToRoot() {
+        navigationController.popToRootViewController(animated: true)
+    }
+    
+    func back() {
+        navigationController.popViewController(animated: true)
     }
 }
 
 extension HomeCoordinator: HomeViewNavigation {
     func goToAccessAccount() {
-        // TODO: Instanciar o coordinator de AccessAccount e chamar o metodo start
+        let accessAccountCoordinator = AccessAccountCoordinator(navigationController: navigationController)
+        accessAccountCoordinator.start()
     }
 }
